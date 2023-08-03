@@ -4,7 +4,7 @@
     class="flex flex-row gap-4 px-4 py-3 rounded-lg hover:bg-light-white hover:shadow-card cursor-pointer"
   >
     <div class="text-xs text-center min-w-[55px]">
-      {{ experience.startYear }} <hr> {{ experience.endYear }}
+      {{ experience.endYear }} <hr> {{ experience.startYear }}
     </div>
     <div class="grow">
       <div
@@ -16,13 +16,13 @@
       >
         {{ experience.position }} | {{ experience.company }}
       </div>
-      <div>
+      <div class="text-sm">
         {{ experience.description }}
       </div>
       <div class="flex flex-row flex-wrap gap-2 mt-4">
         <div
           v-for="(item, index) in experience.stack" :key="index"
-          class="flex text-sm text-light-green bg-opacity-green rounded-full px-3 py-1 w-max"
+          class="flex text-xs text-light-green bg-opacity-green rounded-full px-3 py-1 w-max"
         >
           {{ item }}
         </div>
@@ -33,7 +33,6 @@
 
 <script setup lang="ts">
 import type { Experience } from '@/types/experience';
-// import { Experience } from 'types';
 
 defineOptions({
   name: 'Card',

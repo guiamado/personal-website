@@ -11,7 +11,8 @@ export default defineNuxtConfig({
     // 'tailwindcss'
   ],
   modules: [
-    '@vueuse/nuxt'
+    '@vueuse/nuxt',
+    '@/modules/types/module'
   ],
   postcss: {
     plugins: {
@@ -21,5 +22,5 @@ export default defineNuxtConfig({
   },
   alias: {
     'types': './types'
-  }
+  },
 })

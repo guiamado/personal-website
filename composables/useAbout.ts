@@ -1,5 +1,3 @@
-import { Experience } from "types";
-
 export const useAbout = () => {
   const about = `
     <div class="mb-2">
