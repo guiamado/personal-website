@@ -96,7 +96,7 @@ export const useExperiences = () => {
         },
         {
           name: 'VerSalic',
-          url: 'https://http://versalic.cultura.gov.br/'
+          url: 'http://versalic.cultura.gov.br/#/home'
         },
         {
           name: 'Comunication Service',
@@ -128,7 +128,7 @@ export const useExperiences = () => {
         },
         {
           name: 'VerSalic',
-          url: 'https://http://versalic.cultura.gov.br/'
+          url: 'http://versalic.cultura.gov.br/#/home'
         },
       ],
     },

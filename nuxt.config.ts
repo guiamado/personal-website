@@ -23,4 +23,13 @@ export default defineNuxtConfig({
   alias: {
     'types': './types'
   },
+  app: {
+    head: {
+      title: 'Guiamado',
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'google', content: 'notranslate' },
+      ],
+    },
+  }
 })

@@ -72,26 +72,28 @@
       <div class="text-white/60 lg:w-1/2 lg:py-24">
         <section ref="aboutRef" class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
           <div>
-            <div v-html="about" />
+            <div v-html="about" class="px-4" />
           </div>
         </section>
         <section ref="experienceRef">
           <div v-for="(item, index) in experiences" :key="index">
             <base-card :experience="item"/>
           </div>
-          <base-icon v-slot="{ color }">
-            <a
-              href="/files/resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              download="Guilherme_Amado_Fullstack_Developer.pdf"
-              class="flex text-lg font-semibold text-secondary hover:text-light-green mt-6 w-fit xl:mt-12"
-            >
-              
-              <IconDownload :size="23" :color="color" class="mr-2" />
-              View full resume
-            </a>
-          </base-icon>
+          <div class="flex justify-center lg:justify-start xl:justify-start">
+            <base-icon v-slot="{ color }">
+              <a
+                href="/files/resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                download="Guilherme_Amado_Fullstack_Developer.pdf"
+                class="flex text-lg font-semibold text-secondary hover:text-light-green mt-6 w-fit xl:mt-12 items-center"
+              >
+                
+                <IconDownload :size="23" :color="color" class="mr-2" />
+                View full resume
+              </a>
+            </base-icon>
+          </div>
         </section>
       </div>
     </div>
