@@ -5,5 +5,10 @@ position: string;
 company: string;
 description: string;
 stack: string[];
-link?: string;
+links?: ExperienceLink[];
 };
+
+export interface ExperienceLink {
+  url: string;
+  name: string;
+}

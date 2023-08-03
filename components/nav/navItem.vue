@@ -7,7 +7,7 @@
     >
       <hr class="about-animation-child" :class="aboutClass">
       <span
-        class="about-animation-child"
+        class="about-animation-child transition-colors"
         :class="(!isOutside || isHovered) ? 'text-white text-xs tracking-wider' : 'text-xs tracking-wider'"
       >
         {{ name }}

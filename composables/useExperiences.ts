@@ -18,10 +18,20 @@ export const useExperiences = () => {
         'Kubernetes',
       ],
       description: `
-        Main activities: Develop frontend interfaces for multiple project using VueJS version 2, VueJS version 3, ReactJS and Typescript.
-        After a while I started helping the backend that we mainly used NodeJS, Express and Typescript.
-        Projects: Dashboard, Delivery, Routing system used internally to manage the routes for the deliveries.
+        Started as a Frontend developer and was later promoted to Full-stack to assist
+        with all existing web projects at the time. Responsible for deploys, code reviews,
+        and contributing to architectural decisions as one of the key team members.
       `,
+      links: [
+        {
+          name: 'Turff',
+          url: 'https://turff.nl/'
+        },
+        {
+          name: 'Turff delivery',
+          url: 'https://delivery.turff.nl/'
+        },
+      ],
     },
     {
       company: 'Coopersystem',
@@ -38,10 +48,27 @@ export const useExperiences = () => {
         'Docker',
       ],
       description: `
-        Main activities: Development in Frontend, using VueJS, Vuetify, Vuex e ReactJS technologies.
-        Always focused in UX/UI. Developing big hybrid apps with more then 10k users.
-        Projects: IPEA Bolsas (ReactJS), Meu Clube (VueJS) and Voalá (ReactJS). Working for Bancorbrás as a client.
+        Responsible for the frontend of a web app used by at least 50K users and providing
+        assistance with other projects as needed. Utilizing Cordova to generate the apps.
       `,
+      links: [
+        {
+          name: 'Coopersystem',
+          url: 'https://www.coopersystem.com.br/'
+        },
+        {
+          name: 'Meu Clube iOS',
+          url: 'https://apps.apple.com/br/app/meu-clube/id1384602519'
+        },
+        {
+          name: 'Meu Clube Android',
+          url: 'https://play.google.com/store/apps/details?id=br.com.bancorbras.www&hl=pt_BR&gl=US'
+        },
+        {
+          name: 'Voalá',
+          url: 'https://www.vaidevoala.com.br/'
+        },
+      ],
     },
     {
       company: 'FUNDEP/LABLIVRE',
@@ -58,9 +85,24 @@ export const useExperiences = () => {
         'Docker',
       ],
       description: `
-        Main activities: Development in PHP, VueJS, Vuetify, ZendFrameWork 1, Docker, Docker Compose, open source software, Python and Lúmen.
-        Projects: Salic Lei Rouanet, Notification Service, Salic Api and others.
+        After a year as an intern, I was recognized and promoted to the position of Junior,
+        with added responsibilities to assist in transitioning the backend from ZF1 to Lumen,
+        improve the frontend with Vuetify and Vuex and creating new projects.
       `,
+      links: [
+        {
+          name: 'Salic',
+          url: 'https://salic.cultura.gov.br/'
+        },
+        {
+          name: 'VerSalic',
+          url: 'https://http://versalic.cultura.gov.br/'
+        },
+        {
+          name: 'Comunication Service',
+          url: 'https://github.com/guiamado/comunication-service'
+        },
+      ],
     },
     {
       company: 'Ministry of culture',
@@ -75,11 +117,20 @@ export const useExperiences = () => {
         'ZendFramework 1',
       ],
       description: `
-        Main activities: Development in PHP,
-        VueJS, ZendFramework 1,
-        Docker and SQL.
-        Action on the project Salic, culture incentive.
+        Internship focused on a full-stack position, involving the opportunity
+        to work with various technologies on a national-scale government project,
+        as well as developing a few Telegram bots using Python.
       `,
+      links: [
+        {
+          name: 'Salic',
+          url: 'https://salic.cultura.gov.br/'
+        },
+        {
+          name: 'VerSalic',
+          url: 'https://http://versalic.cultura.gov.br/'
+        },
+      ],
     },
   ];
 

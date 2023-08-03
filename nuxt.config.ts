@@ -12,7 +12,7 @@ export default defineNuxtConfig({
   ],
   modules: [
     '@vueuse/nuxt',
-    '@/modules/types/module'
+    '@/modules/types/module',
   ],
   postcss: {
     plugins: {

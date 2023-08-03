@@ -13,7 +13,13 @@
           </div>
 
           <div class="flex justify-center lg:justify-start xl:justify-start my-4">
-            <img class="max-w-none h-64 rounded-full" src="~/assets/images/profile.jpg" alt="Example Image" width="auto" height="250px" />
+            <img
+              class="max-w-none h-64 rounded-full"
+              src="~/assets/images/profile.jpg"
+              alt="Example Image"
+              width="auto"
+              height="250px"
+            />
           </div>
 
           <div>
@@ -24,16 +30,42 @@
         </div>
         <div class="flex items-end gap-6 mb-4 lg:max-xl:mb-0 justify-center lg:justify-start xl:justify-start">
           <base-icon v-slot="{ color }">
-            <IconBrandGithub :size="30" :color="color" />
+            <a
+              href="https://github.com/guiamado"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex"
+            >
+              <IconBrandGithub :size="30" :color="color" />
+            </a>
           </base-icon>
           <base-icon v-slot="{ color }">
-            <IconBrandLinkedin :size="30" :color="color" />
+            <a
+              href="https://www.linkedin.com/in/guilherme-amado-da-silva-462b0313a/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex"
+            >
+              <IconBrandLinkedin :size="30" :color="color" />
+            </a>
           </base-icon>
           <base-icon v-slot="{ color }">
-            <IconMail :size="30" :color="color" />
+            <a
+              href="mailto:amado.silva133@gmail.com"
+              class="flex"
+            >
+              <IconMail :size="30" :color="color" />
+            </a>
           </base-icon>
           <base-icon v-slot="{ color }">
-            <IconBrandWhatsapp :size="30" :color="color" />
+            <a
+              href="https://api.whatsapp.com/send?phone=31651452136&text=Hi%20Guilherme!%20Just%20saw%20your%20website!"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex"
+            >
+              <IconBrandWhatsapp :size="30" :color="color" />
+            </a>
           </base-icon>
         </div>
       </div>
@@ -47,6 +79,19 @@
           <div v-for="(item, index) in experiences" :key="index">
             <base-card :experience="item"/>
           </div>
+          <base-icon v-slot="{ color }">
+            <a
+              href="/files/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              download="Guilherme_Amado_Fullstack_Developer.pdf"
+              class="flex text-lg font-semibold text-secondary hover:text-light-green mt-6 w-fit"
+            >
+              
+              <IconDownload :size="23" :color="color" class="mr-2" />
+              View full resume
+            </a>
+          </base-icon>
         </section>
       </div>
     </div>
@@ -58,7 +103,13 @@
 </template>
 
 <script setup lang="ts">
-import { IconBrandGithub, IconBrandLinkedin, IconMail, IconBrandWhatsapp } from '@tabler/icons-vue';
+import {
+  IconBrandGithub,
+  IconBrandLinkedin,
+  IconMail,
+  IconBrandWhatsapp,
+  IconDownload
+} from '@tabler/icons-vue';
 import { NavItemEnum } from '#imports';
 
 const styledCursor = ref(`radial-gradient(600px at 100px 100px, rgb(15 118 110 / 20%), transparent 80%);`);

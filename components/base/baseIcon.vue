@@ -1,5 +1,5 @@
 <template>
-  <div ref="icon" class="cursor-pointer">
+  <div ref="icon" class="cursor-pointer w-fit">
     <slot :color="isOutside ? '#D3D1C1' : '#00ffb2'" ></slot>
   </div>
 </template>
